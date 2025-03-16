@@ -9,7 +9,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_executable(myDatabase 
     src/main.cpp 
     src/files/filehandler.cpp
+    src/database/database.cpp
 )
 
 # Include directories
-target_include_directories(myDatabase PRIVATE src/files)
+target_include_directories(myDatabase PRIVATE 
+    src/files
+    src/database    
+)

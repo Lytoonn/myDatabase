@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 
+void createDatabase(const std::string& databaseName);
 void createTable(const std::string& tableName);
 void insertRecord(const std::string& tableName, const std::vector<std::string>& record);
 void deleteRecord(const std::string& tableName, const std::vector<std::string>& record);
