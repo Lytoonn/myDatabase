@@ -15,6 +15,7 @@ std::string strToLower(std::string& str){
     return str;
 }
 
+// Will check if a command exist in an hashmap
 bool isValidCommand(const std::unordered_set<std::string>& validCmds, std::string& cmd){
     return validCmds.find(cmd) != validCmds.end();
 }
